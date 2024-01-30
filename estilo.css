@@ -1,0 +1,735 @@
+/* ----- GERAL ----- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:sans-serif;
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    /* ----- CONTAINNER GERAL ----- */
+
+    header {
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        background-color: #fff;
+    }
+
+    main {
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        background-color: #2ba37b;
+    }
+
+    /* ----- TOPO ----- */
+
+    .topo {
+        width: 80vw;
+        min-height: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+
+    .nome {
+        color: #000;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    .nome span {
+        color: #7eabff;   
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 23%;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: #000;
+        margin: 5px;
+    }
+
+    /* ----- BANNER ----- */
+
+    .banner {
+        height: 100vh;
+        background: url(img/img-fundo.jpg);
+        background-size: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .titulo {
+        background-color: #2ba17ab3;
+        width: 30vw;
+        border: #fff solid 1px;
+        border-radius: 5px;
+        margin: auto;
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .titulo h1 {
+        color: #fff;
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .titulo p {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    /* ----- INFO ----- */
+
+    .info {
+        width: 100%;
+        margin: auto;
+        margin: 50px auto;
+    }
+
+    .info h2 {
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    .info p {
+        line-height: 35px;
+    }
+
+    /* ----- QUARTOS ----- */
+
+    .quartos {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .container figure {
+        width: 300px;
+        height: 230px;
+        margin: 0 10px;
+        margin-bottom: 30px;
+        border-bottom: #2ba37b solid;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container figcaption {
+        padding: 10px 0;
+    }
+
+    /* ----- ROTA ----- */
+
+    iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* ----- SOBRE ----- */
+
+    .container-sobre {
+        width: 85vw;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container-sobre section {
+        width: 500px;
+        height: 130px;
+        margin: 0 10px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .texto {
+        width: 400px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+
+    .container-sobre img {
+        height: 100%;
+        width: 100px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* ----- RODAPE ----- */
+
+    .container-footer {
+        width: 80vw;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .contato {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        color: #fff;
+        padding-bottom: 15px;
+        border-bottom: #207257 solid 2px;
+    }
+
+    .contato div {
+        width: 200px;
+    }
+
+    .contato figure {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .contato figcaption {
+        width: 75%;
+        font-size: 13px;
+    }
+
+    .criador {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        height: 50px;
+        margin: auto;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .criador span {
+        color: #084732;
+    }
+}
+
+@media only screen and (max-width: 1025px) and (min-width: 480px) {
+    
+    /* ----- TOPO ----- */
+
+    header {
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        background-color: #fff;
+    }
+
+    main {
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        background-color: #2ba37b;
+    }
+
+    .topo {
+        width: 80vw;
+        min-height: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+
+    .nome {
+        color: #000;
+        text-decoration: none;
+        font-size: 25px;
+    }
+
+    .nome span {
+        color: #7eabff;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 23%;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: #000;
+        margin: 5px;
+        text-align: center;
+    }
+
+    /* ----- BANNER ----- */
+
+    .banner {
+        height: 700px;
+        background: url(img/img-fundo.jpg);
+        background-size: 150%;
+        display: flex;
+        align-items: center;
+    }
+
+
+    /*#2ba17ab3*/
+    .titulo {
+        background-color: #2ba17ab3;
+        width: 30vw;
+        border: #fff solid 1px;
+        border-radius: 5px;
+        margin: auto;
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .titulo h1 {
+        color: #fff;
+        font-size: 40px;
+    }
+
+    .titulo p {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    /* ----- INFO ----- */
+
+    .info {
+        width: 100%;
+        margin: auto;
+        margin: 50px auto;
+    }
+
+    .info h2 {
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    .info p {
+        line-height: 35px;
+    }
+
+    /* ----- QUARTOS ----- */
+
+    .quartos {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .container figure {
+        width: 300px;
+        height: 230px;
+        margin: 0 10px;
+        margin-bottom: 30px;
+        border-bottom: #2ba37b solid;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .container figcaption {
+        padding: 10px 0;
+    }
+
+    /* ----- ROTA ----- */
+
+    iframe {
+        width: 100%;
+        height: 350px;
+    }
+
+    /* ----- SOBRE ----- */
+
+    .container-sobre {
+        width: 85vw;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container-sobre section {
+        width: 500px;
+        height: 130px;
+        margin: 0 10px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .texto {
+        width: 400px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+
+    .container-sobre img {
+        height: 100%;
+        width: 100px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* ----- RODAPE ----- */
+
+    .container-footer {
+        width: 80vw;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .contato {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        color: #fff;
+        padding-bottom: 15px;
+        border-bottom: #207257 solid 2px;
+    }
+
+    .contato div {
+        width: 200px;
+    }
+
+    .contato figure {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .contato figcaption {
+        width: 75%;
+        font-size: 10px;
+    }
+
+    .criador {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        height: 50px;
+        margin: auto;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .criador span {
+        color: #084732;
+    }
+}
+
+@media only screen and (max-width: 481px) {
+    
+    /* ----- TOPO ----- */
+
+    header {
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        background-color: #fff;
+    }
+
+    main {
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+    }
+
+    footer {
+        width: 100%;
+        text-align: center;
+        background-color: #2ba37b;
+    }
+
+    .topo {
+        width: 80vw;
+        min-height: 40px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;        
+    }
+
+    .nome {
+        color: #000;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .nome span {
+        color: #7eabff;
+    }
+
+    .links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 23%;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: #000;
+        margin: 5px;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    /* ----- BANNER ----- */
+
+    .banner {
+        height: 400px;
+        background: url(img/img-fundo.jpg);
+        background-size: 180%;
+        display: flex;
+        align-items: left;
+    }
+
+
+    /*#2ba17ab3*/
+    .titulo {
+        background-color: #2ba17ab3;
+        width: 70vw;
+        border: #fff solid 1px;
+        border-radius: 5px;
+        margin: auto;
+        padding: 15px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .titulo h1 {
+        color: #fff;
+        font-size: 30px;
+    }
+
+    .titulo p {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    /* ----- INFO ----- */
+
+    .info {
+        width: 100%;
+        margin: auto;
+        margin: 50px auto;
+    }
+
+    .info h2 {
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    .info p {
+        line-height: 35px;
+    }
+
+    /* ----- QUARTOS ----- */
+
+    .quartos {
+        width: 80vw;
+        margin: auto;
+    }
+
+    .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container a {
+        text-decoration: none;
+        color: #000;
+    }
+
+    .container figure {
+        width: 300px;
+        height: 230px;
+        margin: 0 10px;
+        margin-bottom: 30px;
+        border-bottom: #2ba37b solid;
+    }
+
+    .container img {
+        width: 100%;
+        height: auto;
+
+    }
+
+    .container figcaption {
+        padding: 10px 0;
+    }
+
+    /* ----- ROTA ----- */
+
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    /* ----- SOBRE ----- */
+
+    .container-sobre {
+        width: 85vw;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container-sobre section {
+        width: 300px;
+        height: 130px;
+        margin: 0 10px;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .texto {
+        width: 400px;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .texto p {
+        font-size: 15px;
+    }
+
+    .container-sobre img {
+        height: 100%;
+        width: 100px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    /* ----- RODAPE ----- */
+
+    .container-footer {
+        width: 80vw;
+        margin: auto;
+        padding-top: 20px;
+    }
+
+    .contato {
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+        color: #fff;
+        padding-bottom: 15px;
+        border-bottom: #207257 solid 2px;
+    }
+
+    .contato div {
+        width: 100px;
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    .contato figure {
+        width: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato img {
+        width: 15px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .contato figcaption {
+        width: 75%;
+        font-size: 10px;
+    }
+
+    .criador {
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        height: 50px;
+        margin: auto;
+        justify-content: space-between;
+        padding: 15px;
+    }
+
+    .criador span {
+        color: #084732;
+    }
+}
